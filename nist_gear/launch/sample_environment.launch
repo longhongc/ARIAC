@@ -26,8 +26,9 @@
           $(arg gui_args)
           $(arg load_moveit_args)
           $(arg fill_demo_shipment_args)
-          -f $(find nist_gear)/config/trial_config/qualifiers_practice/qual1.yaml
-          $(find nist_gear)/config/user_config/sample_user_config.yaml
+          --visualize-sensor-views
+          -f $(find nist_gear)/config/trial_config/rwa/rwa1_trial.yaml 
+          $(find nist_gear)/config/user_config/rwa/rwa1_sensor.yaml
           " required="true" output="screen" />
 
   <!-- <group ns='ariac/gantry'>
